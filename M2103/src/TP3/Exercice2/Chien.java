@@ -13,8 +13,10 @@ public class Chien extends LesAnimalAvecPattes {
 	}
 	
 	
-	public Chien(String race, double poids, int nbPattes) {
-		super(race, poids, nbPattes);
+	
+	public Chien(String race, double poids, int categorie) {
+		super(race, poids, NB_PATTES_DEFAULT);
+		this.categorie = categorie;
 		// TODO Auto-generated constructor stub
 	}
 	
