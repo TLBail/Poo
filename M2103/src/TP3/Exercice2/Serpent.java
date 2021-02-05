@@ -29,4 +29,11 @@ public class Serpent extends LesAnimalSansPatte{
 		
 	}
 	
+	@Override
+	public void crier() {
+		// TODO Auto-generated method stub
+		super.crier();
+		System.out.println("Salut  tous c le serpent");
+	}
+	
 }

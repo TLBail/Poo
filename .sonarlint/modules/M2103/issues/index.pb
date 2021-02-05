@@ -13,3 +13,9 @@ Y
 )src/TP3/Exercice2/LesAnimalSansPatte.java,c\2\c291f9e9d2d7ab8de4be832858c01861eb15d6ca
 M
 src/TP3/Exercice2/Animal.java,f\7\f7292b9e17ff9ec75f4a907464aa8005311e7830
+P
+ src/TP3/Exercice2/Principal.java,b\f\bfa95be9d38eceac6711ce886268aac3ec6e63d8
+M
+src/TP3/Exercice2/Animal.ucls,6\e\6ed0a7d5cca444b6b26821ce2ee5b02df1b1a78d
+P
+ src/TP3/Exercice2/AnimalUML.ucls,3\5\356af00a0fe4f69e244906645b8dc0ace6ca5085

@@ -1,5 +1,5 @@
 
-Œsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(žÇ¾ÐûÿÿÿÿHRMINORZ
+Tsquid:S1643"Use a StringBuilder instead.(„éÌóþÿÿÿÿ8à“…Œ÷.HvRMINORZ
 CODE_SMELL
-csquid:S1481"+Remove this unused "chien1" local variable.(¸Î›¼ÿÿÿÿÿ8°éè¼ö.H;RMINORZ
+Œsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(žÇ¾ÐûÿÿÿÿHuRMINORZ
 CODE_SMELL

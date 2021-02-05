@@ -1,11 +1,9 @@
 
-Œsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(žÇ¾ÐûÿÿÿÿHRMINORZ
+isquid:S1135"2Complete the task associated to this TODO comment.(ƒŠ® úÿÿÿÿ8ÏÑÇ¼ö.HRINFOZ
 CODE_SMELL
-isquid:S1135"2Complete the task associated to this TODO comment.(ƒŠ® úÿÿÿÿ8ÏÑÇ¼ö.H%RINFOZ
+isquid:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8ÏÑÇ¼ö.HRINFOZ
 CODE_SMELL
-isquid:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8ÏÑÇ¼ö.H&RINFOZ
+Œsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(žÇ¾ÐûÿÿÿÿHRMINORZ
 CODE_SMELL
-msquid:S1068"5Remove this unused "NB_PATTES_DEFAULT" private field.(¹¯¦¢øÿÿÿÿ8“¹Â¼ö.H RMAJORZ
-CODE_SMELL
-isquid:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8Ž±Ï¼ö.H0RINFOZ
+isquid:S1135 "2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8Ž±Ï¼ö.H RINFOZ
 CODE_SMELL

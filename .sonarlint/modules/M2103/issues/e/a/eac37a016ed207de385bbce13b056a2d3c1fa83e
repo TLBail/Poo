@@ -1,5 +1,15 @@
 
-nsquid:S2094"BRemove this empty class, write its code or make it an "interface".(ÜÜ¨HRMINORZ
+¡squid:S1845"gRename field "VENIMEUX" to prevent any misunderstanding/clash with field "venimeux" defined on line 14.(“åş¢úÿÿÿÿ8ÚÓ‹÷.H*RBLOCKERZ
 CODE_SMELL
-Œsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ç¾ĞûÿÿÿÿH	RMINORZ
+Œsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ç¾ĞûÿÿÿÿH%RMINORZ
+CODE_SMELL
+‹squid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(«¹±úÿÿÿÿ8ÚÓ‹÷.H'RMINORZ
+CODE_SMELL
+isquid:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ÚÓ‹÷.H)RINFOZ
+CODE_SMELL
+isquid:S1135"2Complete the task associated to this TODO comment.(ƒŠ® úÿÿÿÿ8ÚÓ‹÷.H(RINFOZ
+CODE_SMELL
+‹squid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(“åş¢úÿÿÿÿ8ÚÓ‹÷.H&RMINORZ
+CODE_SMELL
+isquid:S1135""2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8Á„‹÷.H/RINFOZ
 CODE_SMELL

@@ -1,20 +1,48 @@
 package TP3.Exercice2;
 
+import java.util.*;
+
 public class LesAnimaux {
 	
-	public static void main(String[] args) {
-		Chien chien1 = new Chien("Labrador" , 15, 4);
-		chien1.setNbPattes(5);
+	private List<Animal> animaux;
+	
+	public LesAnimaux() {
+		super();
+		animaux = new ArrayList<>();
+	}
+	
+	@Override
+	public String toString() {
+		String result = "Voici la liste des animaux : \n";
+		for(Animal anmial : animaux) {
+			result += "--" + anmial.toString() + "\n";
+		}
 		
-		Canard canard1 = new Canard("Salut", 0);
-		
-		Serpent serpent1 = new Serpent("LOng", 34, 35, false);
-		System.out.println(chien1.toString());
-		System.out.println(canard1.toString());
-		System.out.println(serpent1.toString());
+		return result;
 		
 	}
 	
+	public void ajouter(Animal animal1) {
+		animaux.add(animal1);
+	}
+	
+	public void cacaphonie() {
+		for (Animal animal : animaux) {
+			animal.crier();
+		}
+	
+	}
+	
+	public void getanimalAvecNbPattes(int nbPattes) {
+		for (Animal animal : animaux) {
+			if(animal instanceof LesAnimalAvecPattes) {
+				LesAnimalAvecPattes animalAvecPattes = (LesAnimalAvecPattes)animal;
+				if(animalAvecPattes.getNbPattes() == nbPattes) {
+					System.out.println("--" +  animalAvecPattes  + "\n");
+				}
+			}
+		}
+	}
 	
 
 }
