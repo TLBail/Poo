@@ -41,6 +41,7 @@ public class LesAnimaux {
 					System.out.println("--" +  animalAvecPattes  + "\n");
 				}
 			}
+			
 		}
 	}
 	
