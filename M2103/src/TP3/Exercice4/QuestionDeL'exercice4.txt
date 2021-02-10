@@ -1,0 +1,35 @@
+Nous allons utiliser les classe suivante :
+	class Carte
+-PoidCarte:PoidCarte
+-couleur:Couleur
++getCouleur(): Couleur
++getPoidCarte(): PoidCarte
++Carte(PoidCarte, Couleur)
++tostring();
++equals();
+
+	class Jeu De Carte
+-paquetDeCarte:List<Carte>
++DistribuerLesCarte(Carte[], Carte[])
++mélangerLePaquet()
++AfficherLePaquetDeCarte()
+
+	class Joueur
++paquetDeCarte:Carte[]
++carteDeLaPair(): Carte //renvoie null si il n'y a pas de pair
++carteDuBrollan(): Carte //renvoie null si il n'y a pas de Brollan
+
+	class Test
+-joueur1:Carte[5]
+-joueur2:Carte[5]
+-jeuDeCarte:JeuDeCarte
+
+	enum Couleur
+CARRE, TREFLE , PIQUE , COEUR
++getRandom(): Couleur
+
+
+	enum PoidCarte
+DEUX, TROIS, QUATRE, CINQ, SIX, SEPT, HUIT, NEUF, DIX,
+	VALET, DAME, ROIS, AS
++getRandom(): PoidCarte
