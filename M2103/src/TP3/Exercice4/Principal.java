@@ -1,14 +1,11 @@
 package TP3.Exercice4;
 
-import java.awt.JobAttributes;
-
-public class Test {
+public class Principal {
 
 	public static void main(String[] args) {
 		
 		
 		JeuDeCarte jeu1 = new JeuDeCarte();
-		
 		
 		jeu1.melangerLePaquet();
 		jeu1.AfficherLePaquetDeCarte();
@@ -34,15 +31,6 @@ public class Test {
 		for (Carte carte : joueur2.paquet) {
 			System.out.println(carte);
 		}
-		
-		/*
-		Joueur joueurTest = new Joueur();
-		joueurTest.paquet[0] = new Carte(PoidCarte.AS, Couleur.CARRE);
-		joueurTest.paquet[4] = new Carte(PoidCarte.AS, Couleur.CARRE);
-		joueurTest.paquet[2] = new Carte(PoidCarte.AS, Couleur.PIQUE);
-		joueurTest.paquet[3] = new Carte(PoidCarte.AS, Couleur.TREFLE);
-		joueurTest.paquet[1] = new Carte(PoidCarte.AS, Couleur.CARRE);
-		*/
 		
 		
 		System.out.println("\n\nLe joueur 1 a t'il une pair");

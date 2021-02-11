@@ -12,28 +12,12 @@ public class JeuDeCarte {
 		Carte carto;
 		System.out.println("Debut generation d'un nouveau paquet de carte");
 		
-		carto = new Carte(
-				PoidCarte.getRandom(),
-				Couleur.getRandom()
-				);
-		paquetDeCarte.add(carto);
-		
-		
-		for (int i = 0; i < 51; i++) {
-			do {
-				isAnewCarte = true;
-				carto = new Carte(
-						PoidCarte.getRandom(),
-						Couleur.getRandom()
-						);
-				for (Carte carte : paquetDeCarte) {
-					if(carte.equals(carto)) {
-						isAnewCarte= false;
-					}
-				}
-			}while(!isAnewCarte);
-			paquetDeCarte.add(carto);
+		for (PoidCarte poid : PoidCarte.values()) {
+			for (Couleur couleur : Couleur.values()) {
+				paquetDeCarte.add(new Carte(poid, couleur));
+			}
 		}
+		
 		System.out.println("fin generation d'un nouveau paquet de carte");
 	}
 	
