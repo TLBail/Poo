@@ -1,10 +1,11 @@
 package TP3.ExerciceCompl1;
 
 public class Date {
-
-	private static final int ANNE_MIN = 1582;
+	private static final int ANNEE_MIN = 1582;
+	//private static final int[] MOIS_DE_30_JOUR = {4,6,9,11};
+	private static final Mois[] MOIS_DE_30_JOUR = {Mois.AVRIL, Mois.JUIN, Mois.SEPTEMBRE, Mois.NOVEMBRE};
 	private int jour;
-	private int mois;
+	private Mois mois;
 	private int annee;
 	
 	public int getAnnee() {
@@ -16,61 +17,110 @@ public class Date {
 	}
 	
 	public int getMois() {
-		return mois;
+		return mois.ordinal() + 1;
 	}
 	
-	public  Date(int jour , int mois , int anne) throws DateException {
-		super();
-		if (anne < ANNE_MIN) {
-			throw new DateException("Annee incorect");
-		}
+	
+	public Date(int jour, int moisu, int annee) throws DateException {
 		
+		//verification de l'annee
+		if (annee < ANNEE_MIN) throw new DateException("mauvaise anné");
 		this.annee = annee;
 		
-		if (mois > 12 || mois < 1) {
-			throw new DateException("Mois inccorect");
-		}
-		int moisImpair[] = {3, 5, 7, 10, 11};
-		for (int a :  moisImpair) {
-			if(a == mois && jour > 30) {
-				throw new DateException("Jour inccorecr");
-				
-			}
-		}
-		if (jour > 31 || jour < 1 || (mois == 2 && jour > 27)) {
-			throw new DateException("Jour incoret");
-			
-		}
+		//verification du mois et conversion du mois
+		if(moisu > 12 || moisu < 1) throw new DateException("mauvais moi");
+		this.mois = Mois.values()[moisu - 1];
+		
+		//verification des jour
+		for (Mois mois30 : MOIS_DE_30_JOUR) if(mois == mois30 && jour > 30) throw new DateException("mauvais jour");
+		if (jour > 31 || jour < 1 || (bissextile() &&  mois == Mois.FEVRIER && jour > 29) || (!bissextile() &&  mois == Mois.FEVRIER && jour > 28)) throw new DateException("mauvaise jour");
+		this.jour = jour;
+	
+		
 	}
 	
 	public void demain() {
+		
 		jour++;
-		int moisImpair[] = {3, 5, 7, 10, 11};
-		for (int a :  moisImpair) {
-			if(a == mois && jour > 30) {
-				mois++;
+		
+		
+		for (Mois mois30 : MOIS_DE_30_JOUR) {
+			if(mois == mois30  && jour > 30) {
+				if(mois == Mois.DECEMBRE) {
+					annee++;
+					mois = Mois.JANVIER;
+				}else {
+					mois = Mois.values()[mois.ordinal() + 1];
+				}
 				jour = 1;
-				
 			}
 		}
-		if (jour > 31 || jour < 1 || (mois == 2 && jour > 27)) {
-			mois++;
+		
+		if (jour > 31 || jour < 1 || (bissextile() &&  mois == Mois.FEVRIER && jour > 29) || (!bissextile() &&  mois == Mois.FEVRIER && jour > 28)) {
+			if(mois == Mois.DECEMBRE) {
+				annee++;
+				mois = Mois.JANVIER;
+			}else {
+				mois = Mois.values()[mois.ordinal() + 1];
+			}
 			jour = 1;
-			
 		}
-			
+		
 	}
 	
-	    
-	private boolean bissextile() {
-		
-		return ((annee % 4 == 0 && annee % 100 != 0) || annee % 400 == 0);
+	private boolean bissextile(){
+		return ((annee % 4 == 0 && annee % 100 != 0) || (annee % 400 == 0));
 	}
+	
+	private String getJourToString() {
+		int jourSurSept;
+		jourSurSept = (int) (jour + annee + annee/4 - annee/100 + annee /400 + (31* mois.ordinal() + 1) /12 ) % 7;
 		
+		switch (jourSurSept){
+		case(0):
+			return  "dimanche";
+		case(1):
+			return  "lundi";
+		case(2):
+			return  "mardi";
+		case(3):
+			return  "mercredi";
+		case(4):
+			return  "jeudi";
+		case(5):
+			return  "vendredi";
+		case(6):
+			return "samedi";
+		default:
+			return null;
+	}
+
+	}
+	
 	@Override
 	public String toString() {
-		String smois = "";
-		return jour + smois + annee;
-	}	
-	
-}
+				return "Le " + getJourToString() + "  " + jour + "  " +  mois.toString().toLowerCase() + "  " + annee;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
