@@ -33,12 +33,8 @@ public class JeuDeCarte {
 	}
 	
 	
-	public void DistribuerCarte(Joueur joueur1, Joueur joueur2) {
-		for (int i = 0; i < 5 ; i++) {
-			joueur1.paquet[i]  = paquetDeCarte.get(paquetDeCarte.size() - 1); 
-			paquetDeCarte.remove(paquetDeCarte.size() - 1);
-			joueur2.paquet[i]  = paquetDeCarte.get(paquetDeCarte.size() - 1); 
-			paquetDeCarte.remove(paquetDeCarte.size() - 1);
-		}
+	public Carte DistribuerCarte() throws PlusDecarteException {
+		if(paquetDeCarte.isEmpty()) throw new PlusDecarteException();
+		return paquetDeCarte.remove(paquetDeCarte.size() - 1);
 	}
 }

@@ -1,11 +1,21 @@
 package TP3.Exercice4;
 
+import java.util.*;
+
+
 public class Joueur {
 	
-	public Carte paquet[] = new Carte[5];
-
+	public Set<Carte> paquet;
+	private String nom;
 	
 	
+	public Joueur(String nom) {
+		super();
+		this.nom = nom;
+		paquet = new HashSet<>();
+	}
+	
+	/*
 	public Carte[] carteDeLaPair() {
 		for (int i = 0; i < paquet.length; i++) {
 			for (int j = i + 1; j < paquet.length; j++) {
@@ -33,5 +43,34 @@ public class Joueur {
 		return null;
 	}
 	
+	*/
+	
+	public PoidCarte getPoidPremierePairePresente() {
+		Carte cartes[] = (Carte[])paquet.toArray();
+		for (int i = 0; i < cartes.length; i++) {
+			for (int j = i + 1; j < cartes.length; j++) {
+				if(cartes[i].getPoidCarte() == cartes[j].getPoidCarte()) {
+					return cartes[i].getPoidCarte();
+				}
+			}
+		}
+		return null;
+	}
+	
+	
+	
+	public void ajouterCarte(Carte carteAajouter) {
+		paquet.add(carteAajouter);
+	}
+	
+	
+	@Override
+	public String toString() {
+		StringBuilder toReturn = new StringBuilder();
+		for (Carte carte : paquet) {
+			toReturn.append(" -- " + carte.toString() + "\n");
+		}
+		return toReturn.toString();
+	}
 
 }

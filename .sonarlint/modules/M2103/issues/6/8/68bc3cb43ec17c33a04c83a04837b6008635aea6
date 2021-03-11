@@ -1,0 +1,9 @@
+
+Zsquid:S30201"-Pass "new Carte[0]" as argument to "toArray".(—Ææè8‡¿´¢û.HRMINORZBUG
+lsquid:S11971"8Move the array designator from the variable to the type.(—Ææè8‡¿´¢û.HRMINORZ
+CODE_SMELL
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(£ ‰ÜHúRMINORZ
+CODE_SMELL
+"squid:ClassVariableVisibilityCheck"RMake paquet a static final constant or non-public and provide accessors if needed.(ÖİÙ†øÿÿÿÿHûRMINORZVULNERABILITY
+`squid:S1068	"'Remove this unused "nom" private field.(À³õåùÿÿÿÿ8Í®ªú.HùRMAJORZ
+CODE_SMELL

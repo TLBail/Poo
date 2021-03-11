@@ -1,0 +1,11 @@
+
+vsquid:UnusedPrivateMethodA"/Remove this unused private "bissextile" method.(Åã¥¸ıÿÿÿÿ8¹ù¢û.H¯RMAJORZ
+CODE_SMELL
+lsquid:S1197!"8Move the array designator from the variable to the type.(ÊšÄ8âÁ¬£û.HƒRMINORZ
+CODE_SMELL
+—squid:S4165"cRemove this useless assignment; "annee" already holds the assigned value along all execution paths.(Äğ³8¹ù¢û.H°RMAJORZ
+CODE_SMELL
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(€ÑæXH”RMINORZ
+CODE_SMELL
+lsquid:S11970"8Move the array designator from the variable to the type.(ÊšÄ8ÿš£û.HØRMINORZ
+CODE_SMELL

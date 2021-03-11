@@ -10,10 +10,19 @@ public class Principal {
 		jeu1.melangerLePaquet();
 		jeu1.AfficherLePaquetDeCarte();
 		
-		Joueur joueur1 = new Joueur(), joueur2 = new Joueur();
+		Joueur joueur1 = new Joueur("Marie"), joueur2 = new Joueur("bob");
 		
-		jeu1.DistribuerCarte(joueur1, joueur2);
-		
+		try {
+			for (int i = 0; i < 5; i++) {
+				joueur1.ajouterCarte(jeu1.DistribuerCarte());
+				joueur2.ajouterCarte(jeu1.DistribuerCarte());
+
+			}
+			
+		}catch (PlusDecarteException e) {
+			// TODO: handle exception
+			System.err.println("Il y a plus de carte ");
+		}	
 		System.out.println("\n \n Les Carte ont été distribué \n \n");
 		
 		jeu1.AfficherLePaquetDeCarte();
@@ -32,7 +41,7 @@ public class Principal {
 			System.out.println(carte);
 		}
 		
-		
+		/*
 		System.out.println("\n\nLe joueur 1 a t'il une pair");
 		if(joueur1.carteDeLaPair() != null) {
 			System.out.println("Oui voici les carte");
@@ -74,7 +83,7 @@ public class Principal {
 			System.out.println("non");
 		}
 		
-	
+		*/
 	}
 	
 }

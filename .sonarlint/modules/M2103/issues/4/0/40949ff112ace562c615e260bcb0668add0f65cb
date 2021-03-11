@@ -1,7 +1,7 @@
 
-csquid:S1135"2Complete the task associated to this TODO comment.(» ζÿÿÿÿÿHRINFOZ
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¨όHHάRMINORZ
 CODE_SMELL
-{squid:S2094"BRemove this empty class, write its code or make it an "interface".(ς¥υμόÿÿÿÿ8•Ό—‡ψ.HΚRMINORZ
+{squid:S2094"BRemove this empty class, write its code or make it an "interface".(ς¥υμόÿÿÿÿ8•Ό—‡ψ.HέRMINORZ
 CODE_SMELL
-‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¨όHHRMINORZ
+csquid:S1135"2Complete the task associated to this TODO comment.(» ζÿÿÿÿÿHήRINFOZ
 CODE_SMELL
